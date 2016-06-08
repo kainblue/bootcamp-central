@@ -14,6 +14,8 @@ WEB_DIR=sites/bootcamp2016/
 WEB_PATH=${WEB_HOST}:${WEB_DIR}
 
 # Default action is to serve the directory.
+sync:
+	git pull https://github.com/biostars/bootcamp-central
 all:
 	pyblue -r ${HTML_DIR}
 
